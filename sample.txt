@@ -1,0 +1,3 @@
+random text
+"Go to desktop while update" 
+after clicking it, I went into lab machine

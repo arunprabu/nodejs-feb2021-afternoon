@@ -32,6 +32,10 @@ http.createServer( (req, res)=> {
       </head>
       <body>
         <h1>Welcome to About Page!</h1>
+        <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
       </body>
     </html>`);
       break;

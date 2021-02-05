@@ -1,0 +1,93 @@
+
+Databases 
+--
+  RDBMS 
+  ---
+    MySQL, MariaDB, SQL Server, Oracle, PostgreSQL 
+
+    Querying with SQL
+
+    Schema Based
+    Table: StudentID*, First Name, LastName, City, DOB
+        Columns, Rows 
+
+  NoSQL Database 
+  ---
+    MongoDB 
+
+    Querying with JavaScript 
+    
+    Schemaless DB 
+    Collection: JSON 
+        Fields, Documents
+    
+    Unstructured Data 
+
+
+Start the MongoDB Server
+------
+  cd C:/Program Files/MongoDB/Server/4.4/bin/
+  mongod 
+
+To Open the connection thru the client tool
+---
+  cd C:/Program Files/MongoDB/Server/4.4/bin/
+  mongo 
+
+
+DB Server
+---
+  PORT: 27017 
+
+
+Client 
+---
+  1. Compass (GUI) 
+  2. Robo3T    
+
+
+
+To create DB 
+  use studentsDB
+
+to know currently selected db
+  db 
+
+to create collection 
+  db.createCollection('students')
+
+to see the collections
+  show collections
+
+to add a Document 
+  db.students.insert({ 'name': 'Arun'})
+
+to get all Documents from the collection 
+  db.students.find()
+
+to get one document from the collection 
+  db.students.find({'name':'Arun'});
+
+to update a document 
+  db.students.update({'studentId':1 }, {$set: {'name': 'Smith'}}) 
+
+to delete a document
+  db.students.deleteOne({'name': 'Arun'});
+
+===
+Schema with MongoDB 
+---
+  users collections 
+  ---
+    userId: number,
+    name: string,
+    phone: string,
+    email: string,
+    createdOn: date 
+    updatedOn: date 
+    isActive: boolean 
+
+
+  
+
+

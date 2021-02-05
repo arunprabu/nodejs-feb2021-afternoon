@@ -1,0 +1,7 @@
+{
+  "url": "mongodb://localhost/usersDB",
+  "options": { 
+    "useNewUrlParser" : true, 
+    "useUnifiedTopology": true
+  }
+}
